@@ -52,7 +52,7 @@ Every photograph is public domain or CC0. Keep the credit with the file.
 
 | Pack key | Title | Author | License | Source | Retrieved |
 |----------|-------|--------|---------|--------|-----------|
-| hero | People's Garden Apiary and Pollinator Garden (20130522-NRCS-LSC-0141) | USDA Natural Resources Conservation Service | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:People%27s_Garden_Apiary_and_Pollinator_Garden_(20130522-NRCS-LSC-0141).jpg) | 2026-10-10 |
+| hero | Honey bee on red zinnia flower (D4114-1) | Peggy Greb, USDA/ARS | Public domain | [USDA ARS](https://www.ars.usda.gov/oc/images/photos/featuredphoto/jun21/honeybee) | 2026-10-12 |
 | goldenFlowers | Steens Mountain - Wildflowers at Kiger Gorge Overlook, 2016 (28665068812) | Bureau of Land Management Oregon and Washington | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Steens_Mountain_-_Wildflowers_at_Kiger_Gorge_Overlook%2C_2016_%2828665068812%29.jpg) | 2026-10-10 |
 | honeyBee | Apis mellifera on a fennel flower | Joselodos | CC0 1.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Apis_mellifera_on_a_fennel_flower.jpg) | 2026-10-10 |
 | nativeBee | Blue orchard bee pollinates Zinnia | Scott Bauer, USDA ARS | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Blue_orchard_bee_pollinates_Zinnia.jpg) | 2026-10-10 |

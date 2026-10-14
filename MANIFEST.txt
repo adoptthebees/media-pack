@@ -1,5 +1,4 @@
 # Adopt The Bees media pack manifest
-# Generated 2026-10-13 from frontend/src/assets/ in adoptthebees/web
 # path<TAB>bytes<TAB>sha256
 brand/bee-mark-inverse.svg	13706	2180d53b6a332ed8444bf0afe81728706a352448672cd365f6fb3ea96ad1b20c
 brand/bee-mark-mono.svg	7504	fa89ed83458336103ae502141fdf459863a08eda007928c8e76e72cbf80d6ec6

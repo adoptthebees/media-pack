@@ -1,11 +1,26 @@
 # Adopt The Bees — media pack
 
-This repository is the distribution host for the Adopt The Bees media pack: the
-brand marks, the site photographs, the Bee anatomy plate art, and the Home hero
-film. The web application keeps its own build copies under `frontend/src/assets/`
-in [`adoptthebees/web`](https://github.com/adoptthebees/web). This repository
-holds the same files for partners, press, and any consumer that fetches media
-over HTTPS.
+This repository is the official media pack of Adopt The Bees: the bee mark, the
+site photographs, the Bee anatomy plate art, and the Home hero film. Press,
+partners, and the Adopt The Bees site use these files. The web application keeps
+its build copies under `frontend/src/assets/` in
+[`adoptthebees/web`](https://github.com/adoptthebees/web). Each copy equals the
+file of the release that the site pins.
+
+## Download
+
+Each [release](https://github.com/adoptthebees/media-pack/releases) holds the
+whole pack as one ZIP file, `adoptthebees-media-pack-<version>.zip`. The newest
+release is at <https://github.com/adoptthebees/media-pack/releases/latest>. The
+release notes give the SHA-256 hash of the ZIP.
+
+The ZIP holds every file of this repository at the tag of the release. Each path
+in the ZIP starts with `adoptthebees-media-pack-<version>/`.
+
+## Terms of use
+
+[`LICENSE.md`](LICENSE.md) gives the terms of each folder. No single license
+covers the whole pack.
 
 ## Layout
 
@@ -15,24 +30,40 @@ over HTTPS.
 | `photos/` | Nine photographs as responsive WebP renditions (640, 1024, 1600, and where it exists 2400 px) | 29 |
 | `plate/` | Bee anatomy plates and studies as WebP renditions (480, 704, 768, 1024, 1200, 1408 px) | 29 |
 | `video/` | The Home hero film: a landscape cut (1920 x 1080) and a portrait cut (720 x 1280), each in AV1 and in H.264 | 4 |
-| `MANIFEST.txt` | Byte count and SHA-256 of every file, tab separated | 66 entries |
+| `MANIFEST.txt` | Byte count and SHA-256 of every media file, tab separated | 66 entries |
+| `LICENSE.md` | The terms of each folder | — |
 
 ## Fetch a file
 
-Raw files are served from GitHub:
+GitHub serves each file of a release at this address:
 
 ```
-https://raw.githubusercontent.com/adoptthebees/media-pack/main/<path>
+https://raw.githubusercontent.com/adoptthebees/media-pack/<version>/<path>
 ```
 
 Example:
 
 ```
-https://raw.githubusercontent.com/adoptthebees/media-pack/main/brand/bee-mark-primary.svg
+https://raw.githubusercontent.com/adoptthebees/media-pack/v1.0.0/brand/bee-mark-primary.svg
 ```
 
-To verify a download against `MANIFEST.txt`, compare the SHA-256 of the file
-with the value on its line.
+Use `main` in place of the version for the newest commit. A version tag does not
+move, so a link with a version keeps its file.
+
+To check a download, compare the SHA-256 hash of the file with the value on its
+line in `MANIFEST.txt`.
+
+## Versions
+
+A version has the form `vMAJOR.MINOR.PATCH`.
+
+| Change | Part that goes up |
+|--------|-------------------|
+| A release removes or renames a path | MAJOR |
+| A release adds a file or changes the content of a file | MINOR |
+| A release changes only `README.md` or `LICENSE.md` | PATCH |
+
+A published release does not change. A correction is a new version.
 
 ## Brand marks
 
@@ -41,7 +72,7 @@ with the value on its line.
 | `brand/bee-mark-primary.svg` | Ink | Default mark on light surfaces |
 | `brand/bee-mark-inverse.svg` | Honey | Mark on a photo or on an ink surface |
 | `brand/bee-mark-mono.svg` | Solid ink | One-color print and single-color use |
-| `brand/google-g.webp` | — | Google "G" on the sign-in button only. The mark belongs to Google LLC. |
+| `brand/google-g.webp` | — | Google "G" on the sign-in button only. Google LLC owns the mark. This pack gives no right to use it. |
 
 The three bee marks are flat SVG shapes on a 1056 x 871 grid. Keep the geometry
 equal to `beeMark.ts` in the web application. The wordmark is live text. Do not
@@ -63,8 +94,9 @@ Every photograph is public domain or CC0. Keep the credit with the file.
 | beesOnComb | Queen Bee (16545241268) | U.S. Geological Survey | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Queen_Bee_%2816545241268%29.jpg) | 2026-10-10 |
 | urbanGarden | Blanket flower in an urban pollinator garden in Chippewa County, Michigan | Madeleine Cantu, USDA | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Blanket_flower_in_an_urban_pollinator_garden_in_Chippewa_County,_Michigan.jpg) | 2026-10-10 |
 
-A photo rendition is named `<key>-<width>.webp`. The number is the pixel width
-of the rendition.
+A photo rendition is named `<name>-<width>.webp`. The name is the pack key in
+lowercase words with hyphens, for example `bees-on-comb` for `beesOnComb`. The
+number is the pixel width of the rendition.
 
 ## Plate art
 
@@ -108,7 +140,15 @@ repository rebuilds the four files.
 
 ## Update the pack
 
+This repository holds no code. The scripts live in `adoptthebees/web`. Run each
+command in the root of a checkout of `adoptthebees/web`. Keep this repository
+beside it as `media-pack`, or set `ATB_MEDIA_PACK_DIR` to its path.
+
 1. Change the asset in `adoptthebees/web` under `frontend/src/assets/`.
 2. Copy the new file into this repository. Keep the path and the name.
-3. Regenerate `MANIFEST.txt`.
-4. Commit and push. Raw URLs keep the same path, so consumers do not change.
+3. Run `npm run build:media-manifest`. It writes `MANIFEST.txt` here.
+4. Commit and push this repository.
+5. Run `npm run release:media-pack -- <version> --dry-run`. When each check
+   passes, run it again without `--dry-run`. The command publishes the release
+   with its ZIP and pins the site to it in `frontend/src/assets/mediaPack.json`.
+6. Run `npm run sync:media`, then commit `adoptthebees/web`.

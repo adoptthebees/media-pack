@@ -1,11 +1,11 @@
 # Adopt The Bees — media pack
 
 This repository is the distribution host for the Adopt The Bees media pack: the
-brand marks, the site photographs, and the Bee anatomy plate art. The web
-application keeps its own build copies under `frontend/src/assets/` in
-[`adoptthebees/web`](https://github.com/adoptthebees/web). This repository holds
-the same files for partners, press, and any consumer that fetches media over
-HTTPS.
+brand marks, the site photographs, the Bee anatomy plate art, and the Home hero
+film. The web application keeps its own build copies under `frontend/src/assets/`
+in [`adoptthebees/web`](https://github.com/adoptthebees/web). This repository
+holds the same files for partners, press, and any consumer that fetches media
+over HTTPS.
 
 ## Layout
 
@@ -14,7 +14,8 @@ HTTPS.
 | `brand/` | Three bee mark SVGs and the Google "G" for the sign-in button | 4 |
 | `photos/` | Nine photographs as responsive WebP renditions (640, 1024, 1600, and where it exists 2400 px) | 29 |
 | `plate/` | Bee anatomy plates and studies as WebP renditions (480, 704, 768, 1024, 1200, 1408 px) | 29 |
-| `MANIFEST.txt` | Byte count and SHA-256 of every file, tab separated | 62 entries |
+| `video/` | The Home hero film: a landscape cut (1920 x 1080) and a portrait cut (720 x 1280), each in AV1 and in H.264 | 4 |
+| `MANIFEST.txt` | Byte count and SHA-256 of every file, tab separated | 66 entries |
 
 ## Fetch a file
 
@@ -81,6 +82,29 @@ repository holds no art from it.
 
 Retouching removed printed figure numbers, letters, and leader lines from the
 source scans.
+
+## Hero film
+
+The Home hero film is an edit of eight short clips from Pexels and Pixabay. The
+clips are not public domain or CC0. The product owner approved the Pexels
+License and the Pixabay Content License for this film only (ATB_TD_012 section
+5 in the web repository). The licenses do not allow a clip to be published on
+its own, so this repository holds only the edited film, never a source clip.
+
+`frontend/src/assets/video/heroFilm.json` in the web repository holds the edit
+list and the credit of each clip. `npm run build:hero-film` in the web
+repository rebuilds the four files.
+
+| Clip | Author | License | Source |
+|------|--------|---------|--------|
+| Flowers, Butterflies, Sunrays | Joe_hackney | Pixabay Content License | [Pixabay](https://pixabay.com/videos/flowers-butterflies-sunrays-forest-124099/) |
+| Bee, Insect, Blossom | RoyBuri | Pixabay Content License | [Pixabay](https://pixabay.com/videos/bee-insect-blossom-bloom-honey-bee-56238/) |
+| Buzzing Beehive in Garden Close-Up | Robert Schwarz | Pexels License | [Pexels](https://www.pexels.com/video/buzzing-beehive-in-garden-close-up-31913044/) |
+| A Beekeeper Inspecting a Hive Frame | ROMAN ODINTSOV | Pexels License | [Pexels](https://www.pexels.com/video/a-beekeeper-inspecting-a-hive-frame-8841379/) |
+| Close-Up of Bees on Wooden Honeycomb Frame | Hakan Kayahan | Pexels License | [Pexels](https://www.pexels.com/video/close-up-of-bees-on-wooden-honeycomb-frame-33338624/) |
+| Close up of a Beekeeper Holding a Hive Frame | ROMAN ODINTSOV | Pexels License | [Pexels](https://www.pexels.com/video/close-up-of-a-beekeeper-holding-a-hive-frame-8841376/) |
+| Close-up of Bees Entering a Beehive at Dusk | Robert Schwarz | Pexels License | [Pexels](https://www.pexels.com/video/close-up-of-bees-entering-a-beehive-at-dusk-31912930/) |
+| Bumblebee Pollinating Purple Wildflower | Thierry Rossier | Pexels License | [Pexels](https://www.pexels.com/video/bumblebee-pollinating-purple-wildflower-32723496/) |
 
 ## Update the pack
 

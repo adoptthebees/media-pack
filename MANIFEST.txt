@@ -1,5 +1,5 @@
 # Adopt The Bees media pack manifest
-# Generated 2026-10-12 from frontend/src/assets/ in adoptthebees/web
+# Generated 2026-10-13 from frontend/src/assets/ in adoptthebees/web
 # path<TAB>bytes<TAB>sha256
 brand/bee-mark-inverse.svg	13706	2180d53b6a332ed8444bf0afe81728706a352448672cd365f6fb3ea96ad1b20c
 brand/bee-mark-mono.svg	7504	fa89ed83458336103ae502141fdf459863a08eda007928c8e76e72cbf80d6ec6
@@ -63,3 +63,7 @@ plate/study-sting-768.webp	140740	5b68707ad0dee4c4fe544c1fbbd0da96e519b4685b0f56
 plate/study-tongue-1200.webp	67754	7c175c511a7ed00543a3855858e931fa120c28e81cc18a07a1d2b20a4a064ca9
 plate/study-tongue-480.webp	21478	97f91021503af6f621d26d53c0adfa323f2d2eb17eb85cac10cdb01609f95fc6
 plate/study-tongue-768.webp	43410	50048893c4005b73e329f50e555ff0dbc84b7806eb89b19e846a77f589052e06
+video/hero-film-landscape-av1.mp4	3669743	1bbb557eeda010320d9ccef267d6aa74e34bca8f9e638498146b339b537f8220
+video/hero-film-landscape-h264.mp4	6313804	df1bbc14d371dc5d4e5d35f4801825abb525728855b998d50ea30c05f9ddca70
+video/hero-film-portrait-av1.mp4	1915872	f26ca713efe65b047c7a211a8aa50746cc4708297fe2b8021f7cb4a681df06c8
+video/hero-film-portrait-h264.mp4	3302366	8a92a2c32518945dd4b906a8afde8401fb7d45fa151d3e793a5736088be6f78a

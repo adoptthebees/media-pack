@@ -27,10 +27,10 @@ covers the whole pack.
 | Path | Contents | Files |
 |------|----------|-------|
 | `brand/` | Three bee mark SVGs and the Google "G" for the sign-in button | 4 |
-| `photos/` | Nine photographs as responsive WebP renditions (640, 1024, 1600, and where it exists 2400 px) | 29 |
+| `photos/` | Ten photographs as responsive WebP renditions (640, 1024, 1600, and where it exists 2400 px) | 32 |
 | `plate/` | Bee anatomy plates and studies as WebP renditions (480, 704, 768, 1024, 1200, 1408 px) | 29 |
 | `video/` | The Home hero film: a landscape cut (1920 x 1080) and a portrait cut (720 x 1280), each in AV1 and in H.264 | 4 |
-| `MANIFEST.txt` | Byte count and SHA-256 of every media file, tab separated | 66 entries |
+| `MANIFEST.txt` | Byte count and SHA-256 of every media file, tab separated | 69 entries |
 | `LICENSE.md` | The terms of each folder | — |
 
 ## Fetch a file
@@ -93,6 +93,7 @@ Every photograph is public domain or CC0. Keep the credit with the file.
 | honeycomb | Pollinator Festival at USDA Farmer's Market and Night Farmers Market) (20150619-OSEC-LSC-0227) | U.S. Department of Agriculture | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pollinator_Festival_at_USDA_Farmer%27s_Market_and_Night_Farmers_Market)_%2820150619-OSEC-LSC-0227%29.jpg) | 2026-10-10 |
 | beesOnComb | Queen Bee (16545241268) | U.S. Geological Survey | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Queen_Bee_%2816545241268%29.jpg) | 2026-10-10 |
 | urbanGarden | Blanket flower in an urban pollinator garden in Chippewa County, Michigan | Madeleine Cantu, USDA | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Blanket_flower_in_an_urban_pollinator_garden_in_Chippewa_County,_Michigan.jpg) | 2026-10-10 |
+| volunteers | 2015 National Public Lands Day in Coos Bay! (21792838605) | Bureau of Land Management Oregon and Washington | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:2015_National_Public_Lands_Day_in_Coos_Bay%21_%2821792838605%29.jpg) | 2026-10-23 |
 
 A photo rendition is named `<name>-<width>.webp`. The name is the pack key in
 lowercase words with hyphens, for example `bees-on-comb` for `beesOnComb`. The

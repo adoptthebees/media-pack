@@ -93,7 +93,7 @@ Every photograph is public domain or CC0. Keep the credit with the file.
 | honeycomb | Pollinator Festival at USDA Farmer's Market and Night Farmers Market) (20150619-OSEC-LSC-0227) | U.S. Department of Agriculture | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pollinator_Festival_at_USDA_Farmer%27s_Market_and_Night_Farmers_Market)_%2820150619-OSEC-LSC-0227%29.jpg) | 2026-10-10 |
 | beesOnComb | Queen Bee (16545241268) | U.S. Geological Survey | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Queen_Bee_%2816545241268%29.jpg) | 2026-10-10 |
 | urbanGarden | Blanket flower in an urban pollinator garden in Chippewa County, Michigan | Madeleine Cantu, USDA | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Blanket_flower_in_an_urban_pollinator_garden_in_Chippewa_County,_Michigan.jpg) | 2026-10-10 |
-| volunteers | Volunteer Group Planting at Logan Pass 08 (28187658192) | Jacob W. Frank, National Park Service | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Volunteer_Group_Planting_at_Logan_Pass_08_%2828187658192%29.jpg) | 2026-10-23 |
+| volunteers | 20231104 man plants tree (53498311873) | Jeremy T. Dyer, Bureau of Land Management Utah | Public domain | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:20231104_man_plants_tree_%2853498311873%29.jpg) | 2026-10-23 |
 
 A photo rendition is named `<name>-<width>.webp`. The name is the pack key in
 lowercase words with hyphens, for example `bees-on-comb` for `beesOnComb`. The
